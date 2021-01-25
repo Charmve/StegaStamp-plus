@@ -18,12 +18,9 @@ The original author @[tancik](https://github.com/tancik).
 
 ## StegaStamp
 
-> ## StegaStamp: Invisible Hyperlinks in Physical Photographs [[Project Page]](http://www.matthewtancik.com/stegastamp)
-
-> ### CVPR 2020
+> ## StegaStamp: Invisible Hyperlinks in Physical Photographs (CVPR 2020) [[Project Page]](http://www.matthewtancik.com/stegastamp)
 > **[Matthew Tancik](https://www.matthewtancik.com), [Ben Mildenhall](http://people.eecs.berkeley.edu/~bmild/), [Ren Ng](https://scholar.google.com/citations?hl=en&user=6H0mhLUAAAAJ)**
 *University of California, Berkeley*
-
 > ![](https://github.com/tancik/StegaStamp/blob/master/docs/teaser.png)
 
 
