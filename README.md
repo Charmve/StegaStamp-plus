@@ -1,7 +1,9 @@
 # StegaStamp-plus
 Improved the original repo, <i>Invisible Hyperlinks in Physical Photographs,</i> without datasets and training parameters @tancik.
 
-<p align="center"><img src="profile.png" alt="Folders in Ubuntu></p>
+<p align="center">
+  <img src="profile.png" alt="Folders in Ubuntu">
+</p>
 
 ## Features
 
