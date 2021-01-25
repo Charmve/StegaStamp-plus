@@ -2,7 +2,7 @@
 Improved the original repo, <i>Invisible Hyperlinks in Physical Photographs,</i> without datasets and training parameters @tancik.
 
 <div align="center">
-  <img src="profile.png" alt="Charmve's Stats">
+  <img src="profile.png" alt="Folders in Ubuntu>
 </div>
 
 ## Features
