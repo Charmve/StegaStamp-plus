@@ -38,9 +38,6 @@ This repository is a code release for the ArXiv report found [here](https://arxi
 
 <h3 class="sub_heading">Training</h3>
 <div>
-	<div class="div-block-3">
-	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01.png" sizes="(max-width: 767px) 90vw, (max-width: 991px) 728px, 940px" srcset="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-500.png 500w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-800.png 800w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-1080.png 1080w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-1600.png 1600w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-2000.png 2000w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01.png 2206w" alt="" class="image-5"/></div><div class="div-block-2"><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca401582e5a6c3ac8af7332_hidden_4.png" data-w-id="d5da53e4-06cc-85b1-9482-435e4147a949" alt="" class="setga_hidden"/>
-	</div>
 <p class="paragraph-3 stega_text"> To train the encoder and decoder networks, we simulate the corruptions caused by printing, reimaging, and detecting the StegaStamp with a set of differentiable image augmentations.</p>
 </div>
 
