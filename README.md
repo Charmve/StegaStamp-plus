@@ -27,6 +27,23 @@ The original author @[tancik](https://github.com/tancik).
 ## Introduction
 This repository is a code release for the ArXiv report found [here](https://arxiv.org/abs/1904.05343). The project explores hiding data in images while maintaining perceptual similarity. Our contribution is the ability to extract the data after the encoded image (StegaStamp) has been printed and photographed with a camera (these steps introduce image corruptions). This repository contains the code and pretrained models to replicate the results shown in the paper. Additionally, the repository contains the code necessary to train the encoder and decoder models.
 
+<h2 class="grey-heading">Method</h2>
+<h3 class="sub_heading">Deployment</h3>
+<div>
+	<div class="div-block-5">
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca3b3c3ca205d53d7e986a1_pipeline-01.png" sizes="(max-width: 767px) 90vw, (max-width: 991px) 728px, 940px" srcset="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca3b3c3ca205d53d7e986a1_pipeline-01-p-500.png 500w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca3b3c3ca205d53d7e986a1_pipeline-01-p-800.png 800w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca3b3c3ca205d53d7e986a1_pipeline-01-p-1080.png 1080w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca3b3c3ca205d53d7e986a1_pipeline-01-p-1600.png 1600w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca3b3c3ca205d53d7e986a1_pipeline-01-p-2000.png 2000w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca3b3c3ca205d53d7e986a1_pipeline-01.png 2407w" alt="" class="stega_pipeline_img"/>
+	</div>
+	<p class="paragraph-3 stega_text">Our system uses an encoder network to process the input image and hyperlink bitstring into a StegaStamp. The StegaStamp is then printed and captured by a camera. A detection network localizes and rectifies the StegaStamp before passing it to the decoder network. After the bits are recovered and error corrected, the user can follow the hyperlink.</p>
+</div>
+
+<h3 class="sub_heading">Training</h3>
+<div>
+	<div class="div-block-3">
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01.png" sizes="(max-width: 767px) 90vw, (max-width: 991px) 728px, 940px" srcset="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-500.png 500w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-800.png 800w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-1080.png 1080w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-1600.png 1600w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01-p-2000.png 2000w, https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca400f82e5a6c5707af7189_pipeline_train-01.png 2206w" alt="" class="image-5"/></div><div class="div-block-2"><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca401582e5a6c3ac8af7332_hidden_4.png" data-w-id="d5da53e4-06cc-85b1-9482-435e4147a949" alt="" class="setga_hidden"/>
+	</div>
+<p class="paragraph-3 stega_text"> To train the encoder and decoder networks, we simulate the corruptions caused by printing, reimaging, and detecting the StegaStamp with a set of differentiable image augmentations.</p>
+</div>
+
 ## Citation
 If you find our work useful, please consider citing:
 ```
