@@ -61,9 +61,7 @@ cd StegaStamp
 - Install tensorflow (tested with tf 1.13)
 - Python 3 required
 - Download dependencies
-```bash=
-pip install -r requirements.txt
-```
+
 
 ## Training
 ### Encoder / Decoder
