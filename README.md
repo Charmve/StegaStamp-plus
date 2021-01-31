@@ -41,17 +41,6 @@ This repository is a code release for the ArXiv report found [here](https://arxi
 <p class="paragraph-3 stega_text"> To train the encoder and decoder networks, we simulate the corruptions caused by printing, reimaging, and detecting the StegaStamp with a set of differentiable image augmentations.</p>
 </div>
 
-## Citation
-If you find our work useful, please consider citing:
-```
-    @inproceedings{2019stegastamp,
-        title={StegaStamp: Invisible Hyperlinks in Physical Photographs},
-        author={Tancik, Matthew and Mildenhall, Ben and Ng, Ren},
-        booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year={2020}
-    }
-```
-
 ## Installation
 - Clone repo and install submodules
 ```bash=
@@ -146,24 +135,63 @@ python detector.py \
   --decoder_model saved_models/stegastamp_pretrained \
   --video test_vid.mp4
 ```
-Add the `--save_video FILENAME` flag to save out the results.
 
-The `--visualize_detector` flag can be used to visualize the output of the detector network. The mask corresponds to the segmentation mask, the colored polygons are fit to this segmentation mask using a set of heuristics. The detector outputs can noisy and are sensitive to size of the stegastamp. Further optimization of the detection network is not explored in this paper.
+<strong>Discription:</strong>
+- Add the `--save_video FILENAME` flag to save out the results.
+
+- The `--visualize_detector` flag can be used to visualize the output of the detector network. The mask corresponds to the segmentation mask, the colored polygons are fit to this segmentation mask using a set of heuristics. The detector outputs can noisy and are sensitive to size of the stegastamp. Further optimization of the detection network is not explored in this paper.
 
 Samely, or run the bash code directly:
 ```bash=
 bash detector.sh
 ```
+in the terminal.
 
 ### Detecting and Decoding from Webcam
-
-Just run 
+In browser 
 
 ```bash=
-bash detector.sh
+localhost:8080/detecdecode.html
 ```
 
-in the terminal.
+## Example Encoded Images
+<div class="w-layout-grid grid">
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece3a76f9674cb331922_original_0.png" id="w-node-ac7c80dba393-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece369dd90202b3b9d7a_hidden_0.png" id="w-node-36366b9dbcb2-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece30eb6b33f8d4267ef_residual_0.png" id="w-node-e80884ffd5de-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece30eb6b39b324267f0_original_28.png" id="w-node-9c2eeb0f55f3-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece369dd9061a43b9d7c_hidden_28.png" id="w-node-3fd6c27963f0-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece39ef4082d8c846fd6_residual_28.png" id="w-node-f172e4fdbcf9-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece30eb6b3070b4267f1_original_25.png" id="w-node-1cb605591b2c-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece30eb6b30f6e4267f2_hidden_25.png" id="w-node-cc09a898c4fe-64fa863e" alt=""/>
+	<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4ece33f994729c3605a22_residual_25.png" id="w-node-0c2b7ac3257b-64fa863e" alt=""/>
+	<div id="w-node-c76dcfc62cf8-64fa863e" class="stega_example_label">Original Image</div>
+	<div id="w-node-62d402cd6de4-64fa863e" class="stega_example_label">StegaStamp</div>
+	<div id="w-node-3acde7b9475e-64fa863e" class="stega_example_label">Residual</div>
+</div>
+<p class="paragraph-3 stega_text">Here are examples of images that have been converted to StegaStamps. The residual depicts the difference between the original image and the StegaStamp.</p>
+	
+## Results
+<div class="w-layout-grid grid-2">
+	<div id="w-node-6ab1577f00ab-64fa863e" class="div-block-4">
+		<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4f5095181343d9eac9d81_oblique.gif" alt="" class="image-7"/>
+		<div class="captions">Oblique Angles</div>
+	</div>
+	<div id="w-node-66615b43b513-64fa863e" class="div-block-4">
+		<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4fcb6b1119cca3212a112_lighting.gif" alt=""/>
+		<div class="captions">Variable Lighting</div>
+	</div>
+	<div class="div-block-4">
+		<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4f8dd79305788c84a1319_occlusion.gif" alt=""/>
+		<div class="captions">Occlusion</div>
+	</div>
+	<div class="div-block-4">
+		<img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4f6dc518134364eacd8d8_reflection.gif" alt=""/>
+		<div class="captions">Reflections</div>
+	</div>
+</div>
+	<p class="paragraph-3 stega_text stega_results_text">Here are examples of detection and decoding. The percentage corresponds to the number of bits correctly decoded. Each of these examples encode 100 bits. </p>
+
 
 ## Disclaimer
 
