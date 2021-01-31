@@ -1,4 +1,6 @@
 # StegaStamp-plus
+> A good exploit is one that is delivered in style.  -- Saumil Shah
+
 Improved the original repo, <i>Invisible Hyperlinks in Physical Photographs</i> @tancik, which without datasets and training parameters.
 
 <p align="center">
