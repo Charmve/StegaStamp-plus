@@ -188,18 +188,18 @@ localhost:8080/detecdecode.html
   <tbody>
 		<tr>
 			<td><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4f5095181343d9eac9d81_oblique.gif" alt="" class="image-7"/></td>
-			<td><div class="captions">Oblique Angles</div></td>
+			<td><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4fcb6b1119cca3212a112_lighting.gif" alt=""/></td>
 		</tr>
 		<tr>
-			<td><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4fcb6b1119cca3212a112_lighting.gif" alt=""/></td>
+			<td><div class="captions">Oblique Angles</div></td>
 			<td><div class="captions">Variable Lighting</div></td>
 		</tr>
 		<tr>
 			<td><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4f8dd79305788c84a1319_occlusion.gif" alt=""/></td>
-			<td><div class="captions">Occlusion</div></td>
+			<td><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4f6dc518134364eacd8d8_reflection.gif" alt=""/></td>
 		</tr>
 		<tr>
-			<td><img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5ca4f6dc518134364eacd8d8_reflection.gif" alt=""/></td>
+			<td><div class="captions">Occlusion</div></td>
 			<td><div class="captions">Reflections</div></td>
 		</tr>
 	</tbody>
