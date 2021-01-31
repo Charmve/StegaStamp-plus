@@ -204,8 +204,7 @@ localhost:8080/detecdecode.html
 		</tr>
 	</tbody>
 </table>
-
-	<p class="paragraph-3 stega_text stega_results_text">Here are examples of detection and decoding. The percentage corresponds to the number of bits correctly decoded. Each of these examples encode 100 bits. </p>
+<p class="paragraph-3 stega_text stega_results_text">Here are examples of detection and decoding. The percentage corresponds to the number of bits correctly decoded. Each of these examples encode 100 bits. </p>
 
 
 ## Disclaimer
