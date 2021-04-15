@@ -208,6 +208,15 @@ localhost:8080/detecdecode.html
 </table>
 <p class="paragraph-3 stega_text stega_results_text">Here are examples of detection and decoding. The percentage corresponds to the number of bits correctly decoded. Each of these examples encode 100 bits. </p>
 
+## Getting Started Yourself
+
+The project is still a work in progress, but I want to put it out so that I get some good suggestions.
+
+The easiest way to get started is to simply try out on Colab: 
+
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/Charmve/StegaStamp/blob/master/StegaStamp_train_model.ipynb)  
+
+The secret.len is limited 7 characters (56 bit).
 
 ## Disclaimer
 
