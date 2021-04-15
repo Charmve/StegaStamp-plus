@@ -1,3 +1,5 @@
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/Charmve/StegaStamp/blob/master/StegaStamp_train_model.ipynb)
+
 # StegaStamp-plus
 > A good exploit is one that is delivered in style.  -- Saumil Shah
 
