@@ -1,4 +1,4 @@
-<p align="center">[<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/Charmve/StegaStamp/blob/master/StegaStamp_train_model.ipynb)
+<p align="center"><a href="https://colab.research.google.com/github/Charmve/StegaStamp/blob/master/StegaStamp_train_model.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" align="center"></a>
 </p>
 
 # StegaStamp-plus
